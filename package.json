@@ -1,0 +1,26 @@
+{
+  "name": "insider-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:test": "cypress run --config-file prod.config.ts",
+    "cy:test:chrome": "cypress run --config-file prod.config.ts --browser chrome",
+    "cy:test:firefox": "cypress run --config-file prod.config.ts --browser firefox"
+  },
+  "dependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@types/mochawesome": "^6.2.1",
+    "cypress-multi-reporters": "1.6.1",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "typescript": "^4.7.4"
+  }
+}
